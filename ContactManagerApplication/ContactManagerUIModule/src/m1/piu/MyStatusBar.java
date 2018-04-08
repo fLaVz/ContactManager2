@@ -5,10 +5,17 @@
  */
 package m1.piu;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author Julien
  */
-public class MyStatusBar {
-    
+public class MyStatusBar extends javax.swing.JLabel {
+        
+    JLabel contactLabel;
+    public MyStatusBar() {
+        contactLabel = new JLabel();
+        contactLabel.setText("Un contact");
+    }
 }

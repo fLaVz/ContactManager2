@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
->Log Session: Sunday, April 8, 2018 7:03:18 PM CEST
+>Log Session: Sunday, April 8, 2018 7:25:40 PM CEST
 >System Info: 
   Product Version         = EasyContactManager 201609300101
   Operating System        = Windows 10 version 10.0 running on amd64
@@ -87,19 +87,19 @@ INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network prox
 INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy: fell to default (correct if direct mode went before)
 INFO [org.netbeans.ui.metrics.laf]: USG_LOOK_AND_FEEL
 SEVERE [org.openide.util.Exceptions]
-java.lang.ClassNotFoundException: m1.piu.Controller
+java.lang.ClassNotFoundException: m1.piu.PanelController
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	at org.netbeans.ProxyClassLoader.loadClass(ProxyClassLoader.java:222)
-Caused: java.lang.ClassNotFoundException: m1.piu.Controller starting from SystemClassLoader[62 modules] with possible defining loaders [ModuleCL@3ac503e2[m1.piu]] and declared parents [org.netbeans.MainImpl$BootClassLoader@2e817b38, ModuleCL@4e695940[org.netbeans.api.annotations.common], ModuleCL@6af63e95[org.openide.awt], ModuleCL@31665417[org.netbeans.api.progress], ModuleCL@40ef10bc[org.netbeans.api.progress.nb], ModuleCL@23d5e0c3[org.openide.dialogs], ModuleCL@34a0286d[org.openide.nodes], ModuleCL@1e3868aa[org.openide.windows], ModuleCL@32987c5d[org.netbeans.modules.editor.mimelookup], ModuleCL@47f9fcb3[org.openide.text], ...43 more]
+Caused: java.lang.ClassNotFoundException: m1.piu.PanelController starting from SystemClassLoader[62 modules] with possible defining loaders [ModuleCL@4ba7a9d6[m1.piu]] and declared parents [org.netbeans.MainImpl$BootClassLoader@2e817b38, ModuleCL@7f0ff7a4[org.netbeans.api.annotations.common], ModuleCL@241f0779[org.openide.awt], ModuleCL@3d0ffc84[org.netbeans.api.progress], ModuleCL@6028dd35[org.netbeans.api.progress.nb], ModuleCL@6d575430[org.openide.dialogs], ModuleCL@7655d63c[org.openide.nodes], ModuleCL@7d62fb13[org.openide.windows], ModuleCL@666cf82d[org.netbeans.modules.editor.mimelookup], ModuleCL@382e2544[org.openide.text], ...43 more]
 	at org.netbeans.ProxyClassLoader.loadClass(ProxyClassLoader.java:224)
 	at org.netbeans.ModuleManager$SystemClassLoader.loadClass(ModuleManager.java:779)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:920)
 Caused: javafx.fxml.LoadException: 
-file:/D:/Dev/ContactManager2/ContactManager2/ContactManagerApplication/build/cluster/modules/m1-piu-FXModule.jar!/m1/piu/FXModule/FXMLMainFrame.fxml:12
+file:/D:/Dev/ContactManager2/ContactManager2/ContactManagerApplication/build/cluster/modules/m1-piu-FXModule.jar!/m1/piu/FXModule/FXMLMainPanel.fxml:10
 
 	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
 	at javafx.fxml.FXMLLoader.access$700(FXMLLoader.java:103)
@@ -109,6 +109,30 @@ file:/D:/Dev/ContactManager2/ContactManager2/ContactManagerApplication/build/clu
 	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:744)
 	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707)
 	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3214)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3175)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3148)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3124)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3104)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:3097)
+	at m1.piu.FXModule.Controller.initialize(Controller.java:25)
+Caused: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2566)
+Caused: javafx.fxml.LoadException: 
+file:/D:/Dev/ContactManager2/ContactManager2/ContactManagerApplication/build/cluster/modules/m1-piu-FXModule.jar!/m1/piu/FXModule/FXMLMainFrame.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2571)
 	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
 	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3214)
 	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3175)
@@ -149,50 +173,8 @@ Input arguments:
 Compiler: HotSpot 64-Bit Tiered Compilers
 Heap memory usage: initial 192,0MB maximum 2716,5MB
 Non heap memory usage: initial 2,4MB maximum -1b
-Garbage collector: PS Scavenge (Collections=2 Total time spent=0s)
-Garbage collector: PS MarkSweep (Collections=1 Total time spent=0s)
-Classes: loaded=5035 total loaded=5035 unloaded 0
+Garbage collector: PS Scavenge (Collections=4 Total time spent=0s)
+Garbage collector: PS MarkSweep (Collections=2 Total time spent=0s)
+Classes: loaded=5527 total loaded=5527 unloaded 0
 INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 12 815 273 984
 INFO [null]: Total physical memory 12 815 273 984
-INFO [org.netbeans.core.startup.layers.BinaryFS]: value = m1.piu.Bundle#CTL_Clear from Actions/Edit/m1-piu-Clear.instance
-java.util.MissingResourceException: Can't find resource for bundle org.openide.util.NbBundle$PBundle, key CTL_Clear
-	at java.util.ResourceBundle.getObject(ResourceBundle.java:450)
-[catch] at org.netbeans.core.startup.layers.BinaryFS$AttrImpl.getValue(BinaryFS.java:719)
-	at org.netbeans.core.startup.layers.BinaryFS$BFSBase.getAttribute(BinaryFS.java:549)
-	at org.openide.filesystems.MultiFileObject.getAttribute(MultiFileObject.java:944)
-	at org.openide.filesystems.MultiFileObject.getAttribute(MultiFileObject.java:877)
-	at org.openide.filesystems.MultiFileObject.getAttribute(MultiFileObject.java:940)
-	at org.openide.filesystems.MultiFileObject.getAttribute(MultiFileObject.java:877)
-	at org.openide.filesystems.MultiFileObject.getAttribute(MultiFileObject.java:798)
-	at org.netbeans.core.startup.layers.BinaryFS$FileMap.get(BinaryFS.java:1128)
-	at org.openide.awt.AlwaysEnabledAction.extractCommonAttribute(AlwaysEnabledAction.java:227)
-	at org.openide.awt.AlwaysEnabledAction.getValue(AlwaysEnabledAction.java:219)
-	at org.openide.awt.Actions$MenuBridge.updateState(Actions.java:1261)
-	at org.openide.awt.Actions$Bridge.prepare(Actions.java:902)
-	at org.openide.awt.Actions$MenuBridge.prepare(Actions.java:1221)
-	at org.openide.awt.Actions.connect(Actions.java:201)
-	at org.openide.awt.Actions$MenuItem.<init>(Actions.java:1571)
-	at org.openide.awt.DynaMenuModel.loadSubmenu(DynaMenuModel.java:138)
-	at org.openide.awt.MenuBar$LazyMenu$MenuFolder.createInstance(MenuBar.java:875)
-	at org.openide.loaders.FolderInstance.defaultProcessObjectsFinal(FolderInstance.java:888)
-	at org.openide.loaders.FolderInstance$1R.run(FolderInstance.java:730)
-	at org.openide.util.Task.run(Task.java:257)
-	at org.netbeans.modules.openide.loaders.AWTTask.run(AWTTask.java:79)
-	at org.netbeans.modules.openide.loaders.AWTTask$Processor.run(AWTTask.java:172)
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
-	at java.awt.EventQueue.access$500(EventQueue.java:97)
-	at java.awt.EventQueue$3.run(EventQueue.java:709)
-	at java.awt.EventQueue$3.run(EventQueue.java:703)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
-	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
-CONFIG [null]: Missing resource from class: org.openide.util.NbBundle$PBundle
-CONFIG [null]: Key which was not found: CTL_Clear
