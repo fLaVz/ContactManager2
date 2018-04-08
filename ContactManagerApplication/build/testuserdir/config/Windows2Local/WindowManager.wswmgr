@@ -3,8 +3,8 @@
 <windowmanager version="2.1">
     <main-window>
   <joined-properties
-   x="169"
-   y="36"
+   x="96"
+   y="72"
    width="1728"
    height="936"
    relative-x="0.0"
@@ -41,5 +41,9 @@
   <bounds x="633" y="249" width="806" height="457" />
     </editor-area>
     <screen width="1920" height="1080"/>
+    <active-mode name="anonymousMode_1"/>
     <toolbar configuration="Standard" preferred-icon-size="24"/>
+    <tc-list>
+  <tc-id id="FXModuleTopComponent"/>
+    </tc-list>
 </windowmanager>

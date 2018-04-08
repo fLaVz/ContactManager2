@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="m1.piu.FXModule">
+    <module_version install_time="1523207070882" last="true" origin="installer" specification_version="1.0">
+        <file crc="2964429130" name="config/Modules/m1-piu-FXModule.xml"/>
+        <file crc="3033936248" name="modules/m1-piu-FXModule.jar"/>
+    </module_version>
+</module>

@@ -15,13 +15,6 @@
         </folder>
     </folder>
     <folder name="Menu">
-        <folder name="File">
-            <file name="m1-piu-Clear.shadow">
-                <!--m1.piu.Clear-->
-                <attr name="originalFile" stringvalue="Actions/Edit/m1-piu-Clear.instance"/>
-                <attr intvalue="1300" name="position"/>
-            </file>
-        </folder>
         <folder name="Edit">
             <file name="m1-piu-Clear.shadow">
                 <!--m1.piu.Clear-->
