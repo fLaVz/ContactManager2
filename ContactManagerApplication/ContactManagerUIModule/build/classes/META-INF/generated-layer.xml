@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Edit">
+            <file name="m1-piu-Clear.instance">
+                <!--m1.piu.Clear-->
+                <attr bundlevalue="m1.piu.Bundle#CTL_Clear" name="displayName"/>
+                <attr
+                    methodvalue="org.openide.awt.Actions.alwaysEnabled" name="instanceCreate"/>
+                <attr name="delegate" newvalue="m1.piu.Clear"/>
+                <attr boolvalue="false" name="noIconInMenu"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="File">
+            <file name="m1-piu-Clear.shadow">
+                <!--m1.piu.Clear-->
+                <attr name="originalFile" stringvalue="Actions/Edit/m1-piu-Clear.instance"/>
+                <attr intvalue="1300" name="position"/>
+            </file>
+        </folder>
+        <folder name="Edit">
+            <file name="m1-piu-Clear.shadow">
+                <!--m1.piu.Clear-->
+                <attr name="originalFile" stringvalue="Actions/Edit/m1-piu-Clear.instance"/>
+                <attr intvalue="100" name="position"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>
